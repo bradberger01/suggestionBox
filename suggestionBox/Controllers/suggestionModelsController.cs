@@ -46,7 +46,7 @@ namespace suggestionBox.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "RecordNum,Topic,Suggestion")] suggestionModel suggestionModel)
+        public ActionResult Create([Bind(Include = "RecordNum,Topic,Suggestion,Department")] suggestionModel suggestionModel)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace suggestionBox.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "RecordNum,Topic,Suggestion")] suggestionModel suggestionModel)
+        public ActionResult Edit([Bind(Include = "RecordNum,Topic,Suggestion,Department")] suggestionModel suggestionModel)
         {
             if (ModelState.IsValid)
             {
